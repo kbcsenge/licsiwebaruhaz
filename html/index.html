@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tatár Liliána, Kovács-Bodó Csenge">
+        <link rel="stylesheet" href="../css/licsicss.css">
+        <link rel="icon" href="../media/icon.jpg">
+        <title>Üdvözöljük</title>
+        <style>
+            .kepvetites {display: none;}
+            img {vertical-align: middle;}
+            .kepvetites-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }
+
+            .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+            @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-container">
+            <header>
+                <img class="headerimage" src="../media/fokepjo.jpg" alt="Fejléc kép" title="Fejléc kép">
+            </header>
+            <nav class="menu">
+                <a href="../html/index.html" class="active">LICSI🙋</a>
+                <a href="../html/egeszseg.html" >Miért fontos az egészséges életmód?🥕</a>
+                <a href="../php/quiz.php">Teszteld tudásod!</a>
+                <a href="../php/regist.php">Regisztráció🖊️</a>
+                <a href="../php/login.php">Bejelentkezés👋</a>
+                <q>Minden nap egy alma az orvost távol tartja.</q>
+            </nav>
+            <main>
+                <section>
+                    <div style="text-align:center">
+                    <h1>Üdvözöljük a LiCsi Webáruház oldalán!</h1>
+                        <div class="kepvetites-container">
+                            <div class="kepvetites fade">
+                                <img src="../media/gyumik.jpg" alt="Gyümölcsök" title="Gyümölcsök" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/alma.jpg" alt="Alma" title="Alma" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/zold.jpg" alt="Zöldség" title="Zöldség" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/pari.jpg" alt="Paradicsom" title="Paradicsom" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/eper.jpg" alt="eper" title="Eper" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/repa.jpg" alt="Répa" title="Répa" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/magvak.jpg" alt="Magvak" title="Magvak" style="height:500px">
+                            </div>
+                            <div class="kepvetites fade">
+                                <img src="../media/narancs.jpg" alt="Narancs" title="Narancs" style="height:500px">
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="text-align: center">Lépjen be vagy regisztráljon!</h3>
+                    <div  class="flex-container">
+                        <button class="gomb button-regist" onclick="window.location.href = '../php/login.php';">Bejelentkezés</button>
+                        <button class="gomb button-regist" onclick="window.location.href = '../php/regist.php';">Regisztráció</button>
+                    </div>
+                </section>
+            </main>
+            <div id="footer">
+                <h4>Szegedi Tudományegyetem Természettudományi és Informatikai Kar Webtervezés gyakorlat 2022/23/2.félév</h4>
+                <h5>Készítette: Tatár Liliána, Kovács-Bodó Csenge</h5>
+            </div>
+            <script>
+                let slideIndex = 0;
+                kepvetites();
+                function kepvetites() {
+                let i;
+                let slides = document.getElementsByClassName("kepvetites");
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(kepvetites, 2000);
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,244 @@
+body {
+    font-family: Serif;
+    text-align: center;
+    margin: auto;
+    background-color: #b4e3a4;
+    background-position:center;
+    background-size: contain;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: #009900;
+    padding: 0;
+    color:white;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+}
+.menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-collapse: collapse;
+    border-right: 2px solid black;
+}
+.menu a:hover{
+    background-color: darkgrey;
+}
+
+.active{
+    background-color:  #253a24;
+    margin-bottom: 0;
+}
+
+th, td {
+    padding: 30px;
+    border-bottom: 2px solid green;
+}
+
+p{
+    font-size: 20px;
+}
+q{
+    float: right;
+    font-size: 30px;
+    padding: 10px 10px 5px 10px;
+}
+.gomb {
+    font-family: Serif;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    animation-name: szinvaltos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+input[type=submit]{
+    background: none;
+    border :none;
+    color: white;;
+    font-size: 16px;
+}
+@keyframes szinvaltos {
+    0%   {background-color: #82fc00;}
+    30%   {background-color: #114411;}
+    60%   {background-color: #009900;}
+    100%   {background-color: #c9e8a4;}
+}
+.gomb:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 15px 0 15px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.csempelink {
+    background: #333;
+    display: grid;
+    margin: 10px;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 234px;
+    width: 330px ;
+    color: #fff;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.csempecim {
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 32px;
+    display: block;
+    font-weight: 700;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+.csempeszoveg {
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin: 0 auto;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+
+.flex_this {
+    align-content: center;
+    display: inherit;
+    flex-wrap: inherit;
+    padding: 10px;
+}
+
+.flex_this:hover {
+    margin-top: -20px;
+    background-color: #8FBC8F;
+    mix-blend-mode: hard-light;
+}
+
+input[type=text], select, [type=email], [type=password], [type=date]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+}
+div.form{
+    display: block;
+    text-align: center;
+}
+form {
+    display: inline-block;
+    width: 500px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+label{
+    color: green;
+}
+
+main {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.button-regist {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+#vaszon {
+    display: block;
+    margin: 0 auto;
+}
+.headerimage{
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+}
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: #009900;
+    padding: 0;
+    color:white;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: white;
+    border-collapse: collapse;
+}
+.link {
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.5;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    animation-name: szinvaltos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
